@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Best Friend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* style.css */
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7faff; /* Soft pastel blue background */
+    color: #333;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero section (header) */
+.hero-section {
+    text-align: center;
+    background: linear-gradient(45deg, #ffadad, #ffd6a5);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Profile section */
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1.5s ease-out;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffd700; /* Golden border for the photo */
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.bio {
+    max-width: 500px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+}
+
+.details {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.details li {
+    margin: 10px 0;
+}
+
+/* Memories gallery */
+.memories {
+    text-align: center;
+    margin-top: 40px;
+    animation: fadeIn 2s ease-out;
+}
+
+.memories-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-transform: uppercase;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+/* Main container styling */
+.proposal-container {
+    text-align: center;
+    position: relative;
+}
+
+/* Animated text styling */
+.proposal-text {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff1493; /* Hot pink color */
+    animation: fadeIn 2s ease-in-out, bounce 1s infinite;
+}
+
+/* GIF styling */
+.proposal-gif {
+    width: 300px;
+    height: 300px;
+    animation: scaleUp 2s ease-in-out forwards;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffadad;
+    color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    /* Fade-in animation for the text */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bouncing effect for text */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Scale-up animation for GIF */
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Hover effect: make the GIF grow larger */
+.proposal-gif:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+    
+}
+
+</style>
+<body>
+
+    <div class="wrapper">
+        <header class="hero-section">
+            <h1 class="title">One Step Ahead&#128145;</h1>
+            <p class="subtitle">A friend like no other!</p>
+        </header>
+
+        <section class="profile">
+            <div class="profile-info">
+                <img src="C:\Users\User\OneDrive\Pictures\virat-kohli-gq-qu.jpg" alt="Best Friend" class="profile-photo">
+                <div class="bio">
+                    <h2 class="name">Dr.Saishri &#127872;</h2>
+                    <p class="quote">"The best things in life are the people we love, the places we've been, and the memories we've made along the way."</p>
+                    <ul class="details">
+                        <li><strong>Likes:</strong> Adventure, Food, Laughter, Toxicness, pets</li>
+                        <li><strong>Hobbies:</strong> Traveling, Photography, Reading,Sleeping</li>
+                        <li><strong>Favorite Color:</strong> Black</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="memories">
+            <h2 class="memories-title">My feelings for you</h2>
+            <div class="gallery">
+                <div class="gallery-item"><h1>First Look </h1>
+                    <h4> 27 March 2023:</h4>
+                    <p class="quote">The first time I saw you I was totally unaware that you will be the most precious person of my life.<br>The way you removed your helmet and the the killer look was just awesome.Your green kurta+jeans+odni=Jannat look&#128553;<br></p></div>
+                <div class="gallery-item"><h1>First Interaction</h1><h4>3 April 2024</h4> <p class="quote">The first time we went togather to that Bistro Cafe.We were sitting beside each other and you gave me your phone to login my Snap.<br>
+                We Exchanged our I'd with each other.</p></div>
+                <div class="gallery-item"> <h1> Talking Stage</h1>
+                    <h4> 6 April 2023</h4><p class="quote">After the exchange of I'd we started talking after 3 days and the chat lasted for 4 AM in the morning.My excitment to talk to you was unexplainable.<br>The blush while talking with you,that smile that laughter everything was just awesome.<br>That every night I was talking with you felt very special.My sleepy eyes were so obsessed with your text that they were ired but wanted to talk to you&#128151;</p>
+                </div>
+                <div class="gallery-item"><h1>Falling in love with you</h1><p class="quote">I liked this things about you</p>
+                    <li body align="left">Your care</li>
+                    <li body align="left">Your cute Face</li>
+                    <li body align="left" >Your smile</li>
+                    <li body align="left">Your inner harami personality</li>
+                    <p class="quote">You are just adorable.Your voice,your face, I just loved all about you.I wish all your dreams come true and you giva all your money to me and I would travel whole world with your money&#128513;</p>
+                </div>
+            </div>
+        </section>
+        <body>
+
+    <!-- Main container for the proposal -->
+    <div class="proposal-container">
+        <!-- Animated proposal text -->
+        <h1 class="proposal-text">Will you be my Girlfriend/Future Wife?&#128151;</h1>
+        
+        <!-- Heart GIF or engagement ring GIF -->
+        <img src="https://media1.giphy.com/media/1wmOyZYoGzz003R03Y/giphy.gif?cid=6c09b952wixiqt06a2a8ah2sgz847bhbrjulnhuaju5k75xq&ep=v1_gifs_search&rid=giphy.gif&ct=g"alt="Heart proposal GIF" class="proposal-gif">
+    </div>
+
+</body>
+       
+        <footer>
+            <h3>Created with love by your Nalayak Best friend Bunny&#128521;</h3>
+        </footer>
+    </div>
+
+
+</body>
+</html>
